@@ -1,0 +1,88 @@
+<!Doctype html>
+<html>
+    <head>
+    <html lang="eng">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title>Love</title>
+        <style> * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       body {
+        position: absolute;
+        background-color: rgb(43, 5, 78);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 100vh;
+        min-width: 100%;
+        min-height: 100%;
+       }
+       .container {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        line-height: 100vh;
+        background-color: transparent;
+        width: 400px;
+        height: 300px;
+       }
+       .love {
+       width:90px;
+       height: 90px;
+       background-color: red;
+       transform: rotate(45deg);
+       animation: jedug 10s linear infinite;
+       transition: 3s; box-shadow: 5px 5px 20px red;
+       }
+       @keyframes jedug
+       {
+        0% {transform: scale(1) rotate(45deg);}
+        10% {transform: scale(1.1) rotate(45deg);}
+        20% {transform: scale(1) rotate(45deg);}
+        30% {transform: scale(1.1) rotate(45deg);}
+        40% {transform: scale(1) rotate(45deg);}
+        50% {transform: scale(1.1) rotate(45deg);}
+        60% {transform: scale(1) rotate(45deg);}
+        100% {transform: scale(1.1) rotate(45deg);}
+       }
+       .love::before
+       {
+        width:90px;
+       height: 90px;
+       background-color: red;
+       position: absolute;
+       display: flex;
+       right: 50%;
+       border-radius: 50%;
+       box-shadow: 5px 5px 20px red;
+       }
+       .love::after
+       {
+        content:'';
+        width:90px;
+       height: 90px;
+       background-color: red;
+       position: absolute;
+       display: flex;
+       bottom: 50%;
+       border-radius: 50%;
+       box-shadow: 5px 5px 20px red;
+       }
+        </style>
+    </head>
+    <body>
+    <div class="container"> 
+    <div class="love">
+        
+    </div>
+     </div>
+    
+
+
+    </html>
+</html>

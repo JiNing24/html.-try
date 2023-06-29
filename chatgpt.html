@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: absolute;
+            background-color: rgb(43, 5, 78);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 100vh;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .container {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            line-height: 100vh;
+            background-color: transparent;
+            width: 400px;
+            height: 300px;
+        }
+
+        .love {
+            width: 90px;
+            height: 90px;
+            background-color: red;
+            transform: rotate(45deg);
+            animation: jedug 10s linear infinite;
+            transition: 3s;
+            box-shadow: 5px 5px 20px red;
+        }
+
+        @keyframes jedug {
+            0% {
+                transform: scale(1) rotate(45deg);
+            }
+
+            10% {
+                transform: scale(1.1) rotate(45deg);
+            }
+
+            20% {
+                transform: scale(1) rotate(45deg);
+            }
+
+            30% {
+                transform: scale(1.1) rotate(45deg);
+            }
+
+            40% {
+                transform: scale(1) rotate(45deg);
+            }
+
+            50% {
+                transform: scale(1.1) rotate(45deg);
+            }
+
+            60% {
+                transform: scale(1) rotate(45deg);
+            }
+
+            100% {
+                transform: scale(1.1) rotate(45deg);
+            }
+        }
+
+        .love::before,
+        .love::after {
+            content: '';
+            width: 90px;
+            height: 90px;
+            background-color: red;
+            position: absolute;
+            display: flex;
+            border-radius: 50%;
+            box-shadow: 5px 5px 20px red;
+        }
+
+        .love::before {
+            right: 50%;
+        }
+
+        .love::after {
+            bottom: 50%;
+        }
+
+        .text h1 {
+            color: pink;
+            font-weight: 600;
+            font-size: 50px;
+            position: absolute;
+            align-items: center;
+            word-wrap: normal;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="love"></div>
+</div>
+<div class="text">
+    <h1>coba teken tombol play 
+        <button id="btn_music" onclick="music ()">Play/Pause</button>
+    </h1>
+</div>
+
+<audio id="bgmusic" src="LAGU1S.COM -Yovie And Nuno - Janji Suci (6).mp3" loop></audio>
+</body>
+<script>
+    var audioPlaying = false;
+    function music() {
+        var audio = document.getElementById("bgmusic");
+        if (!audioPlaying) audio.play();
+        else audio.pause();
+        audioPlaying = !audioPlaying;
+    }
+</script>
+
+</html>

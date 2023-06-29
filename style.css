@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color:white;
+
+}
+.navlist {
+    display: flex;
+}
+.navlist a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight:600px ;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover {
+    border-bottom: 2px solid white;
+}
+#menu-icon {
+    color: white;
+    font-size: 40px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+.hero {
+    height: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #95814d, #706838 28.53%, #363913 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+section {
+    padding: 0, 19%;
+}
+.hero-text h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+.hero-text h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+.hero-text h1 {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 45px;
+    line-height: 1px;
+    color: white;
+    margin: 0 0 45px;
+}
+.hero-text p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+.hero-img img {
+    width: 500px;
+    height: auto;
+    display: flex;
+}
+.hero-text a {
+    display: inline-block;
+    color: white;
+    background: #90954d;
+    border: 1pc solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+.hero-text a:hover {
+    background: transparent;
+    border: 1px solid white;
+    transform: translate(8px);
+}
+.hero-text a.ctta {
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+.hero-text a.ctta i {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.scroll-down {
+    position: absolute;
+    bottom: 26%;
+    right: 9%;
+}
+.scroll-down i {
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #4d9559;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.scroll-down i:hover {
+    transform: translateY(-5px);
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding: var(--scroll-padding, 5rem)
+}
+.Ror-text h1 {
+    padding: 10px;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Poppins, sans-serif;';
+}
+.Ror-text h5 {
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    text-align: left;
+    width: 435px;
+    padding: 10px;
+    margin: 0;
+}
+.Boom-text h1 {
+    padding: 10px;
+    border: 5px solid rgb(128, 128, 128);
+    margin: 0;
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Poppins, sans-serif;';
+}
+.Boom-text h3 {
+    word-wrap: break-word;
+    font-size: 15px;
+    color: white;
+}
+.Boom-text p {
+    text-align: left;
+    word-wrap: normal;
+    padding: 10px;
+    border: 5px solid rgb(128, 128, 128);
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+    font-family: 'Poppins, sans-serif;';
+}
+.Boom-image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mimax(250px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+.thum {
+    position: relative;
+    transition: all .3s cubic-bezier(cubic-bezier(.445, .05, .55, .95));
+    cursor: pointer;
+}
+.Boom-image {
+    width: 500px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+.Si-text h1 {
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight:600px ;
+    border-bottom: 2px solid transparent;
+   
+}
+.Si-text h2 {
+    color: white;
+    margin-left: 60px;
+    font-size: 50px;
+    font-weight:600px ;
+    font-family: 'Bilbo Swash Caps', cursive;
+}
+.Si-text h4 {
+    color: white;
+    margin-left: 60px;
+    font-size: 25px;
+    font-weight:600px ;
+    font-family: 'Bilbo Swash Caps', cursive;
+}
