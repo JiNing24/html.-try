@@ -130,16 +130,16 @@
 </div>
 <div class="text">
 <h1>Coba teken play
-    <button id="btn_music" onclick="music ()">Play/Pause</button>
+    <button id='btn_music' onclick='music ()'>Play/Pause</button>
 </h1>
 </div>
-<audio id="bgMusic" src="LAGU1S.COM -Yovie And Nuno - Janji Suci (6).mp3" loop></audio>
+<audio id="bgMusic" src="LAGU1S.COM -Yovie And Nuno - Janji Suci (6).mp3"></audio>
 </body>
 <script>
     var audioPlaying = false;
     function music () {
-        var audio = document;getElementById("bgMusic");
-        if (audioPlaying) audio.play ();
+        var audio = document.getElementById("bgMusic");
+        if (!audioPlaying) audio.play ();
         else audio.pause ();
         audioPlaying = !audioPlaying;
     }
