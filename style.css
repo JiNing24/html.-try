@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
+    width: auto;
 }
 header {
     position: fixed;
