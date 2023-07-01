@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
+    width: auto;
+}
+body{
+    overflow-x: auto;
 }
 header {
     position: fixed;
@@ -203,12 +207,16 @@ html {
     display: flex;
     align-items: center;
 }
+.section-4-left {
+    float: left;
+  }
 .Si-text h1 {
     color: white;
     margin-left: 60px;
     font-size: 15px;
     font-weight:600px ;
     border-bottom: 2px solid transparent;
+
    
 }
 .Si-text h2 {
@@ -227,48 +235,45 @@ html {
 }
 
 @media screen and (max-width: 600px) {
-  header {
-    padding: 20px 5%;
+    header {
+      padding: 20px 5%;
+    }
+    
+    .navlist {
+      display: none;
+    }
+    
+    #menu-icon {
+      display: block;
+    }
+    
+    .hero {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 1rem;
+    }
+    
+    .hero-img img {
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    section {
+      padding: 0 5%;
+    }
+    
+    .Ror-text h1,
+    .Boom-text h1,
+    .Boom-text p,
+    .Si-text h1,
+    .Si-text h2,
+    .Si-text h4 {
+      margin-left: 0;
+      text-align: center;
+    }
+    
+    .Boom-image {
+      margin-top: 2rem;
+    }
   }
   
-  .navlist {
-    display: none;
-  }
-  
-  #menu-icon {
-    display: block;
-  }
-  
-  .hero {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 1rem;
-  }
-  
-  .hero-img img {
-    width: 100%;
-    max-width: 300px;
-  }
-  
-  section {
-    padding: 0 5%;
-  }
-  
-  .Ror-text h1,
-  .Boom-text h1,
-  .Boom-text p,
-  .Si-text h1,
-  .Si-text h2,
-  .Si-text h4 {
-    margin-left: 0;
-    text-align: center;
-  }
-  
-  .Boom-image {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center; /* Add this line */
-    align-items: center; /* Add this line */
-    flex-wrap: wrap; /* Add this line */
-  }
-}
