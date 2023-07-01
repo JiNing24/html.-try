@@ -6,7 +6,6 @@
     list-style: none;
     text-decoration: none;
     width: auto;
-    overflow-x: auto;
     display: flex;
 }
 header {
