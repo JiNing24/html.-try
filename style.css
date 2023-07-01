@@ -6,6 +6,10 @@
     list-style: none;
     text-decoration: none;
     width: auto;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
 }
 header {
     position: fixed;
