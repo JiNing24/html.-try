@@ -1,3 +1,13 @@
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
 let menu = document.querySelector('#meno-icon');
 let navlist = document.querySelector('.navlist');
 
@@ -22,3 +32,4 @@ document.documentElement.style.setProperty(
     "--scroll-padding",
     navigationHeight + "px"
 );
+
