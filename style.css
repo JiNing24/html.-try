@@ -8,7 +8,7 @@
     width: auto;
 }
 body{
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 header {
     position: fixed;
@@ -191,7 +191,7 @@ html {
 }
 .Boom-image {
     display: grid;
-    grid-template-columns: repeat(auto-fit, mimax(250px, auto));
+    grid-template-columns: repeat(auto-fit, mimax(100px, auto));
     grid-gap: 2rem;
     align-items: center;
     margin-top: 5rem;
